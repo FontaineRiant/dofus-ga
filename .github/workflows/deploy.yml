@@ -17,8 +17,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: FontaineRiant/dofusga
+          token: fadfsdf
           ref: main # branch
-          token: ${{ secrets.DOFUSGA_PAGES }}
           path: .
 
       - name: Setup Python
