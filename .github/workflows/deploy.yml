@@ -16,7 +16,7 @@ jobs:
       - name: Clone Github Repo
         uses: actions/checkout@v4
         with:
-          repository: FontaineRiant/dofusga
+          repository: 'FontaineRiant/dofusga'
           token: ${{ secrets.DOFUSGA_PAGES }}
           ref: main # branch
           path: .
