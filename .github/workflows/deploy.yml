@@ -16,7 +16,7 @@ jobs:
       - name: Clone Github Repo
         uses: actions/checkout@v4
         with:
-          repository: 'FontaineRiant/dofusga'
+          repository: 'FontaineRiant/dofusga-engine'
           token: ${{ secrets.DOFUSGA_PAGES }}
           ref: main # branch
           path: .
@@ -50,7 +50,7 @@ jobs:
 
     environment:
       name: github-pages
-      url: https://fontaineriant.github.io/dofus-ga/voici/render/dofusga.html
+      url: https://fontaineriant.github.io/dofusga/voici/render/dofusga.html
 
     runs-on: ubuntu-latest
     steps:
