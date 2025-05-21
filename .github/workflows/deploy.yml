@@ -17,6 +17,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: FontaineRiant/dofusga
+          ref: main # branch
           token: ${{ secrets.DOFUSGA_PAGES }}
           path: .
 
