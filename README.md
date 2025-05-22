@@ -1,6 +1,6 @@
 # DofusGA
 
-__[Link to DofusGA](https://fontaineriant.github.io/dofusga/voici/render/dofusga.html)__
+__[Start DofusGA](https://fontaineriant.github.io/dofusga/voici/render/dofusga.html)__
 
 DofusGA is a build optimizer for Dofus.
 
