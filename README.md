@@ -46,7 +46,8 @@ Example for a fire Pandawa who wants a balance of healing and damage:
 
 | Line | Element | Base damage | Can crit | Crit damage | Crit % | Is weapon | Is ranged | Heals | Weight |
 | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- |
-| Pandjiu × 2 (28 - 32 base damage) | Fire | 30 | yes | 36 | 10 | no | yes | no |  2 |
-| Ebony Dofus (best element) | Best | 15 | no | — | — | no | yes | no |  1 |
-| Possessed Hammer (damage) | Neutral | 16.5 | yes | 20.5 | 20 | yes | no | no | -1 |
-| Possessed Hammer (healing) | Fire | 16.5 | yes | 20.5 | 20 | yes | no | yes | 3 |
+| Pandjiu × 2 (28 - 32 base damage) | Fire | 30 | ✓ | 36 | 10 | ✕ | ✓ | ✕ |  2 |
+| Ebony Dofus (best element) | Best | 15 | ✕ |  |  | ✕ | ✓ | ✕ |  1 |
+| Possessed Hammer (damage) | Neutral | 16.5 | ✓ | 20.5 | 20 | ✓ | ✕ | ✕ | -1 |
+| Possessed Hammer (healing) | Fire | 16.5 | ✓ | 20.5 | 20 | ✓ | ✕ | ✓ | 3 |
+
