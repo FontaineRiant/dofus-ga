@@ -14,3 +14,34 @@ DofusGA optimizes for builds that will __win__ a fight where two characters are 
  * Critical and pushback resistances
  * AP/MP parry and wisdom
  * Opponent resistances
+
+## Pameters
+
+### Hard constraints
+Set the minimum AP/MP/Range including or excluding exotics and the pool of items to consider.
+
+Setting tank will determine how important your resistances need to be. 0% means you don't expect to ever take damage, 100% means you expect to take exactly as much damage as you deal, typically for a 1v1 duel where both opponents are melee. DofusGA will optimize for you to win and winning doesn't always involve dealing a lot of damage.
+
+If you absolutely want an item to be part of the build, like a legendary item or a particular weapon, you can include it in core items. The more items are included, the faster and more accurate the results. You can also blacklist items that work against your strategy or that you can't afford.
+
+### Opponent resistances
+Mostly useful to prioritize neutral damage over earth damage, pushback damage over elemental damage, non-critical over critical.
+
+An interesting use cas is setting Neutral to 10% and Earth 30% on strenth pvp builds, then add Ebony Dofus damage lines below (or other "best element" spells). DofusGA will try to make strength builds that trigger the dofus' neutral damage rather than earth damage (unless the cost on other stats is too high).
+
+Set everything to 0% for PvE builds.
+
+### Lines to optimize
+Include damage and healing lines for an average turn.
+
+Use a negative weight if the damage is to a teammate. Use fractional weights to optimize a spell that you only use every other turn.
+
+Example for a fire Pandawa who wants a balance of healing and damage:
+
+
+| Line | Element | Base damage | Can crit | Crit damage | Crit % | Is weapon | Is ranged | Heals | Weight |
+| :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- |
+| Pandjiu × 2 (28 - 32 base damage) | Fire | 30 | yes | 36 | 10 | no | yes | no |  2 |
+| Ebony Dofus (best element) | Best | 15 | no | — | — | no | yes | no |  1 |
+| Possessed Hammer (damage) | Neutral | 16.5 | yes | 20.5 | 20 | yes | no | no | -1 |
+| Possessed Hammer (healing) | Fire | 16.5 | yes | 20.5 | 20 | yes | no | yes | 3 |
