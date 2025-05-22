@@ -6,23 +6,28 @@ DofusGA is a build optimizer for Dofus.
 
 It's a powerful engine that uses a genetic algorithm to find the best items to equip given a use case, and runs 100% in the browser.
 
-Finding the build that deals the most damage is easy. But how much sustainability are you willing to lose for it? Are crits worth losing a bit of power? You have resists but it would be better if they were about equal?
+DofusGA optimizes for builds that will __win__ a fight where two characters are hitting each other. Finding the build that deals the most damage is easy. But how much sustainability are you willing to lose for it? Are crits worth losing a bit of power? You have resists but would it be better if they were about equal? Do you get more from a 12th AP or extra power?
 
-DofusGA optimizes for builds that will __win__ a fight where two characters are hitting each other. It puts everything in the balance:
+DofusGA puts everything in the balance:
  * Stats, power and crits
  * Vitality, melee, ranged and elemental resistances
  * Critical and pushback resistances
  * AP/MP parry and wisdom
  * Opponent resistances
+ * And more...
 
 ## Pameters
 
 ### Hard constraints
 Set the minimum AP/MP/Range including or excluding exotics and the pool of items to consider.
 
-Setting tank will determine how important your resistances need to be. 0% means you don't expect to ever take damage, 100% means you expect to take exactly as much damage as you deal, typically for a 1v1 duel where both opponents are melee. DofusGA will optimize for you to win and winning doesn't always involve dealing a lot of damage.
+The Tank variable will determine how high your resistances need to be. 0% means you don't expect to ever take damage,
+100% means you expect to take exactly as much damage as you deal, typically for a 1v1 duel where both opponents are melee.
+DofusGA will optimize for you to __win__ and winning doesn't always involve dealing a lot of damage.
 
-If you absolutely want an item to be part of the build, like a legendary item or a particular weapon, you can include it in core items. The more items are included, the faster and more accurate the results. You can also blacklist items that work against your strategy or that you can't afford.
+If you absolutely want an item to be part of the build, like a legendary item or a particular weapon,
+you can include it in core items. The more items are included, the faster and more accurate the results.
+You can also blacklist items that work against your strategy or that you can't afford.
 
 ### Opponent resistances
 Mostly useful to prioritize neutral damage over earth damage, pushback damage over elemental damage, non-critical over critical.
