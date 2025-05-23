@@ -1,8 +1,8 @@
 # DofusGA
 
-## __[Start DofusGA](https://fontaineriant.github.io/dofusga/voici/render/dofusga.html)__
+### __[>>> Start DofusGA <<<](https://fontaineriant.github.io/dofusga/voici/render/dofusga.html)__
 
-#### 🇬🇧 EN
+## 🇬🇧 EN
 DofusGA is a build optimizer for Dofus.
 
 It's a powerful engine that uses a genetic algorithm to find the best items to equip given a use case, and runs 100% in the browser.
@@ -23,7 +23,7 @@ Limitations:
  * Effects triggered in combat are ignored (legendary items, some dofus effects),
  * Flat resistance bonuses are ignored.
 
-#### 🇫🇷 FR
+## 🇫🇷 FR
 DofusGA est un optimisateur de stuffs pour Dofus.
 
 C'est un moteur puissant qui utilise un algorithme génétique pour trouver les meilleurs objets à équiper à partir d'un cas d'utilisation, et s'exécute à 100% dans le navigateur.
