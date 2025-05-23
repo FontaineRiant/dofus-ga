@@ -1,7 +1,8 @@
 # DofusGA
 
-__[Start DofusGA](https://fontaineriant.github.io/dofusga/voici/render/dofusga.html)__
+## __[Start DofusGA](https://fontaineriant.github.io/dofusga/voici/render/dofusga.html)__
 
+#### EN 🇬🇧
 DofusGA is a build optimizer for Dofus.
 
 It's a powerful engine that uses a genetic algorithm to find the best items to equip given a use case, and runs 100% in the browser.
@@ -9,45 +10,42 @@ It's a powerful engine that uses a genetic algorithm to find the best items to e
 DofusGA optimizes for builds that will __win__ a fight where two characters are hitting each other. Finding the build that deals the most damage is easy. But how much sustainability are you willing to lose for it? Are crits worth losing a bit of power? You have resists but would it be better if they were about equal? Do you get more from a 12th AP or extra power?
 
 DofusGA puts everything in the balance:
- * Stats, power and crits
- * Vitality, melee, ranged and elemental resistances
- * Critical and pushback resistances
- * AP/MP parry and wisdom
- * Opponent resistances
+ * Stats, power and crits,
+ * Vitality, melee, ranged and elemental resistances,
+ * Critical and pushback resistances,
+ * AP/MP parry and wisdom,
+ * Opponent resistances,
  * And more...
 
-## Pameters
+Limitations:
+ * Trophies with a set bonus requirement are excluded,
+ * Cire Momore's set is excluded,
+ * Effects triggered in combat are ignored (legendary items, some dofus effects),
+ * Flat resistance bonuses are ignored.
 
-### Hard constraints
-Set the minimum AP/MP/Range including or excluding exotics and the pool of items to consider.
+#### FR 🇫🇷
+DofusGA est un optimisateur de stuffs pour Dofus.
 
-The Tank variable will determine how high your resistances need to be. 0% means you don't expect to ever take damage,
-100% means you expect to take exactly as much damage as you deal, typically for a 1v1 duel where both opponents are melee.
-DofusGA will optimize for you to __win__ and winning doesn't always involve dealing a lot of damage.
+C'est un moteur puissant qui utilise un algorithme génétique pour trouver les meilleurs objets à équiper à partir d'un cas d'utilisation, et s'exécute à 100% dans le navigateur.
 
-If you absolutely want an item to be part of the build, like a legendary item or a particular weapon,
-you can include it in core items. The more items are included, the faster and more accurate the results.
-You can also blacklist items that work against your strategy or that you can't afford.
+DofusGA optimise les stuffs dans le but de __gagner__ un combat dans lequel les adversaires se frappent.
+Il est facile de trouver le stuff qui fait le plus de dommages. Mais combien de résistances êtes vous prêts à perdre pour y arriver?
+Est-ce que les critiques valent de perdre un peu de puissance? Vous avez des résistances mais ce serait mieux si elles étaient à peu près égales?
+Le 12ème PA est-il plus intéressant qu'un peu plus de force?
 
-### Opponent resistances
-Mostly useful to prioritize neutral damage over earth damage, pushback damage over elemental damage, non-critical over critical.
+DofusGA répond à ces questions en mettant tout dans la balance:
+ * Caractéristiques, puissance et critiques,
+ * Vitalité, résistances melée, distance et élémentaires,
+ * Résistances critiques et poussée,
+ * Esquive PA/PM et sagesse,
+ * Resistances adverses,
+ * Et plus encore ...
 
-An interesting use cas is setting Neutral to 10% and Earth 30% on strenth pvp builds, then add Ebony Dofus damage lines below (or other "best element" spells). DofusGA will try to make strength builds that trigger the dofus' neutral damage rather than earth damage (unless the cost on other stats is too high).
+Limitations:
+ * Les trophées qui ont des conditions d'équipement dépendant du nombre de bonus de panoplie ne sont pas inclus,
+ * La panoplie du Cire Momore n'est pas incluse,
+ * Les effets en combat sont ignorés (objets légendaires, certains dofus comme l'Abyssal),
+ * Les résistances élémentaires fixes sont ignorées.
 
-Set everything to 0% for PvE builds.
-
-### Lines to optimize
-Include damage and healing lines for an average turn.
-
-Use a negative weight if the damage is to a teammate. Use fractional weights to optimize a spell that you only use every other turn.
-
-Example for a fire Pandawa who wants a balance of healing and damage:
-
-
-| Line | Element | Base damage | Can crit | Crit damage | Crit % | Is weapon | Is ranged | Heals | Weight |
-| :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- | :------- |
-| Pandjiu × 2 (28 - 32 base damage) | Fire | 30 | ✓ | 36 | 10 | ✕ | ✓ | ✕ |  2 |
-| Ebony Dofus (best element) | Best | 15 | ✕ |  |  | ✕ | ✓ | ✕ |  1 |
-| Possessed Hammer (damage) | Neutral | 16.5 | ✓ | 20.5 | 20 | ✓ | ✕ | ✕ | -1 |
-| Possessed Hammer (healing) | Fire | 16.5 | ✓ | 20.5 | 20 | ✓ | ✕ | ✓ | 3 |
-
+#### Disclaimer
+DofusGA and its creator aren't associated in any way with Ankama Games.
