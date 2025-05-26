@@ -49,3 +49,4 @@ Limitations:
 
 #### Disclaimer
 DofusGA and its creator aren't associated in any way with Ankama Games.
+
