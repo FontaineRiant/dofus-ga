@@ -18,7 +18,6 @@ DofusGA puts everything in the balance:
  * And more...
 
 Limitations:
- * Trophies with a set bonus requirement are excluded,
  * Cire Momore's set is excluded,
  * Effects triggered in combat are ignored (legendary items, some dofus effects),
  * Flat resistance bonuses are ignored.
@@ -42,7 +41,6 @@ DofusGA répond à ces questions en mettant tout dans la balance:
  * Et plus encore ...
 
 Limitations:
- * Les trophées qui ont des conditions d'équipement dépendant du nombre de bonus de panoplie ne sont pas inclus,
  * La panoplie du Cire Momore n'est pas incluse,
  * Les effets en combat sont ignorés (objets légendaires, certains dofus comme l'Abyssal),
  * Les résistances élémentaires fixes sont ignorées.
