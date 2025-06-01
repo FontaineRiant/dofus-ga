@@ -30,7 +30,7 @@ jobs:
 
       - name: Build the JupyterLite site
         shell: bash -l {0}
-        run: voici build --contents content --output-dir dist --theme dark
+        run: voici build --contents content --output-dir dist --theme dark --no-sourcemaps
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
